@@ -1,0 +1,19 @@
+.pt-fx {
+    position: fixed;
+}
+
+.pt-ab {
+    position: absolute;
+}
+
+.pt-st {
+    position: static;
+}
+
+.pt-sc {
+    position: static;
+}
+
+.pt-re {
+    position: relative;
+}

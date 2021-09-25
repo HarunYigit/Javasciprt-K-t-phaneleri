@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script src="./sorter.js"></script>
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        let sort = [];
+        for (let i = 0; i < 800; i++) {
+            sort.push(getRndInteger(1, 100) / 100);
+        }
+        /*
+                let sort_f = new sort_list_1(sort, "<");
+                let sort_f2 = new sort_list_2(sort, "<");
+                let sort_f3 = new sort_list_3(sort, "<");
+
+                console.log(sort_f);
+                console.log(sort_f2);
+                console.log(sort_f3);*/
+        let sort_ = new integer_array(sort);
+
+
+        sort_.array = sort_.array.map(function(el) {
+            if (el > 0.85) {
+                return 2;
+            }
+            return el;
+        });
+        console.log(sort_.sort());
+        sort_.replace("<20", 50);
+        // console.log(sort_.array);
+        //console.log(sort_.sort());
+    </script>
+</body>
+
+</html>
